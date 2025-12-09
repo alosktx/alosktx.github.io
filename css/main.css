@@ -1415,7 +1415,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #1c2b42;
+  background: #c8e596;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2759,4 +2759,27 @@ header.header {
   .sidebar-active .footer-fixed {
     left: 320px;
   }
+}
+/* 1. 背景图设置 */
+body {
+  background: url("/images/bg.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+/* 2. 文章、评论区、分页等白色底板半透明 */
+.main-inner > .post-block,
+.main-inner > .comments,
+.main-inner > .pagination {
+  background: rgba(255,255,255,0.2); /* 第四值即透明度 */
+}
+/* 3. 侧边栏半透明 */
+.sidebar {
+  opacity: 0.2;
+}
+/* 4. 顶部菜单栏半透明 */
+.header-inner {
+  background: rgba(255,255,255,0.2);
+}
+/* 5. 搜索弹窗半透明 */
+.popup {
+  opacity: 0.2;
 }
